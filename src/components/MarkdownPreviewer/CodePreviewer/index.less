@@ -1,0 +1,56 @@
+.code-preview-container {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 16px;
+    border: 1px solid #ebedf0;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+	.cp-component {
+		padding: 25px 24px 30px;
+		color: rgba(0, 0, 0, 0.65);
+	}
+	.cp-operate{
+		padding: 10px 0 8px 0;
+		text-align: center;
+		border-top: 1px dashed #ebedf0;
+		opacity: 0.8;
+		-webkit-transition: opacity 0.3s;
+		transition: opacity 0.3s;
+		.copy-wrapper{
+			border: none;
+			margin: 0;
+			padding: 0;
+			cursor: pointer;
+		}
+		.code-img{
+			width: 17px;
+			vertical-align: middle;
+			margin-top: -3px;
+			margin-left: 10px;
+			cursor: pointer;
+			opacity: 0.8;
+		}
+	}
+	.cp-code {
+		.code-content {
+			overflow: auto;
+			height: auto;
+			transition: height 800ms ease-in-out 0ms;
+			display: block;
+			padding: 16px 32px;
+			color: #314659;
+			font-size: 14px;
+			font-family: 'Lucida Console', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+			border-radius: 2px;
+			border-top: 1px dashed #ebedf0;
+		}
+		.hide-code-content {
+			border-top: none;
+			height: 0;
+			padding: 0;
+			transition: height 800ms ease-in-out 0ms;
+		}
+	}
+}
